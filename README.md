@@ -49,9 +49,17 @@ The Lorenz system is a nonlinear system of ODEs that exhibits **chaotic behaviou
 - Trajectories diverge but remain confined to the same strange attractor
 - Illustrates the distinction between short-term predictability (“weather”) and long-term statistical structure (“climate”)
 
+---
+
 ## Author
 
 **Leon Godtfredsen**  
 University of Edinburgh  
+
+---
+
+## Acknowledgements
+
+This project was completed as part of the Image Processing component of the course at the University of Edinburgh.
 
 
