@@ -1,8 +1,57 @@
-Solving Wave Equations of form:
-<img width="811" height="197" alt="Screenshot 2025-12-24 at 14 02 09" src="https://github.com/user-attachments/assets/32483d5a-f9d5-4797-a43e-8a1e31e5801f" />
-using basis of eigen-vectors and converting into fourier series
+# Numerical Methods for Dynamical Systems and PDEs
 
-Solving a specific ODE's using numerical methods such as Euler's and Runge-Kutta's, and plotting the difference in their accuracies when arriving at the final solutions. 
-<img width="548" height="395" alt="Screenshot 2025-12-24 at 14 05 30" src="https://github.com/user-attachments/assets/c4a80c78-68e3-45b0-b5bc-036c60c022b3" />
+This repository contains numerical experiments investigating **ordinary differential equations (ODEs)** and **partial differential equations (PDEs)**, with an emphasis on **accuracy, stability, and sensitivity to initial conditions**.  
+The project combines analytical reasoning, numerical implementation, and visualisation.
 
-helloo 
+---
+
+## Contents
+
+- `task1_wave_equation.ipynb` – Damped wave equation using spectral methods  
+- `task2_lorenz_system.ipynb` – Lorenz system, numerical accuracy, and chaos  
+- `README.md` – Project overview  
+
+---
+
+## Part 1: Damped Wave Equation
+
+### Overview
+A **damped wave equation** is solved on a one-dimensional spatial domain using a **Fourier sine series expansion**. The infinite series is truncated to a finite number of modes and reconstructed in physical space.
+
+### Methods
+- Modal decomposition and series truncation
+- Reconstruction of the solution \( u(x,t) \)
+- Comparison of solutions for different numbers of modes
+- Time-dependent visualisation and animation
+
+### Key Results
+- Increasing the number of modes improves spatial accuracy
+- Low truncation leads to loss of fine-scale structure
+- The numerical solution exhibits physically consistent damping
+
+---
+
+## Part 2: Lorenz System
+
+### Overview
+The Lorenz system is a nonlinear system of ODEs that exhibits **chaotic behaviour** for certain parameter values. Despite being deterministic, the system shows strong **sensitivity to initial conditions**, limiting long-term predictability.
+
+### What Was Done
+- Analytical computation of equilibrium (critical) points
+- Implementation of **Forward Euler** and **4th-order Runge–Kutta (RK4)** schemes
+- Comparison of global error vs timestep
+- Simulation and visualisation of the Lorenz strange attractor
+- Sensitivity analysis using perturbed initial conditions
+
+### Key Findings
+- Euler’s method converges with first-order accuracy, while RK4 converges with fourth-order accuracy
+- Small perturbations in initial conditions grow rapidly over time
+- Trajectories diverge but remain confined to the same strange attractor
+- Illustrates the distinction between short-term predictability (“weather”) and long-term statistical structure (“climate”)
+
+## Author
+
+**Leon Godtfredsen**  
+University of Edinburgh  
+
+
